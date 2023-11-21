@@ -68,9 +68,23 @@ li {
     font-size: 24px;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 li:nth-child(2), li:nth-child(4), li:nth-child(6), li:nth-child(8) {
     background-color: #E1DEDE;
     color: #535556;
+}
+
+.selected {
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+li:nth-child(2).selected, li:nth-child(4).selected, li:nth-child(6).selected {
+    background-color: #444444;
+    color: #FFFFFF;
 }
 
 nav {

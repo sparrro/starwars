@@ -93,6 +93,10 @@ async function fillDetailsBoxes() {
     for (let el of [...charactersEl.children]) {
         let position = [...charactersEl.children].indexOf(el)
         el.addEventListener('click', async () => {
+            [...charactersEl.children].forEach(li => {
+                li.classList.remove('selected')
+            })
+            el.classList.add('selected')
             guyDetailsEl.innerHTML = ''
             planetDetailsEl.innerHTML = ''
             guySpinner.style.visibility = 'visible'
