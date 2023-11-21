@@ -19,24 +19,28 @@
                 <h2>Characters</h2>
                 <ul id="characterList">
                 </ul>
-                <div class="spinner"></div>
+                <div class="spinner" id="leftSpinner"></div>
                 <nav>
-                    <button type="button">&#9665</button>
+                    <button id="leftButton" type="button">&#9665</button>
                     <p>1/8</p>
-                    <button type="button">&#9655</button>
+                    <button id="rightButton" type="button">&#9655</button>
                 </nav>
             </article>
-            <article id="detailBox">
+            <article>
                 <h2>Details</h2>
-                <section id="guyDetails">
-                    <div class="spinner invisible"></div>
+                <section class="guyDetails">
+                    <div id="guyDetails">
+                    </div>
+                    <div class="spinner" id="guySpinner"></div>
                 </section>
-                <section id="planetDetails">
-                    <div class="spinner invisible"></div>
+                <section class="planetDetails">
+                    <div id="planetDetails">
+                    </div>
+                    <div class="spinner" id="planetSpinner"></div>
                 </section>
             </article>
         </main>
     </div>
-    <script src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
 </body>
 </html>
