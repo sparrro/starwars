@@ -10,12 +10,32 @@
     height: 100vh;
 }
 
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
 h1 {
     font-family: 'Ropa Sans';
     color: #FFD600;
     font-size: 64px;
     letter-spacing: 0.75rem;
     width: 25rem;
+}
+
+h2 {
+    font-family: 'Ropa Sans';
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: #FFd600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 header {
@@ -30,16 +50,103 @@ main {
     justify-content: space-evenly;
 }
 
-main>article:nth-child(1) {
+main>article {
     width: 30rem;
     height: 90%;
-    background-color: red;
+    background-color: #c4c4c4;
     margin-top: -2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-main>article:nth-child(2) {
-    width: 30rem;
-    height: 90%;
-    background-color: red;
-    margin-top: -2rem;
+main>article:nth-child(1)>h2 {
+    background-color: #535556;
+}
+
+li {
+    list-style: none;
+    background-color: #8E8E8E;
+    height: 3rem;
+    color: #FFFFFF;
+    font-family: Roboto;
+    line-height: 3rem;
+    padding-left: 1rem;
+    font-size: 24px;
+}
+
+li:nth-child(2), li:nth-child(4), li:nth-child(6) {
+    background-color: #E1DEDE;
+    color: #535556;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1rem;
+}
+
+nav>p {
+    padding-left: 1rem;
+}
+
+button {
+    border: unset;
+    background-color: unset;
+    font-size: 30px;
+    width: fit-content;
+}
+
+main>article:nth-child(2)>h2 {
+    background-color: #748687;
+}
+
+main>article:nth-child(2)>section:nth-child(2) {
+    flex-grow: 1;
+    display: flex;
+}
+
+main>article:nth-child(2)>section:nth-child(3) {
+    flex-grow: 1;
+    background-color: #8E8E8E;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.spinner {
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+article:nth-child(1) .spinner {
+    border: 5px solid #8E8E8E;
+    border-bottom-color: #C4C4C4;
+}
+
+#guyDetails .spinner {
+    border: 2.5px solid #8E8E8E;
+    border-left-color: #C4C4C4;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#planetDetails .spinner {
+    border: 2.5px solid #C4C4C4;
+    border-top-color: #8E8E8E;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
 }

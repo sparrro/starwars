@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Frank+Ruhl+Libre:wght@700;900&family=Poppins&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ropa+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="content-wrapper">
@@ -14,8 +15,26 @@
             <h1>STAR WARS CATALOG</h1>
         </header>
         <main>
-            <article id="characterBox"></article>
-            <article id="detailBox"></article>
+            <article>
+                <h2>Characters</h2>
+                <ul id="characterList">
+                </ul>
+                <div class="spinner"></div>
+                <nav>
+                    <button type="button">&#9665</button>
+                    <p>1/8</p>
+                    <button type="button">&#9655</button>
+                </nav>
+            </article>
+            <article id="detailBox">
+                <h2>Details</h2>
+                <section id="guyDetails">
+                    <div class="spinner invisible"></div>
+                </section>
+                <section id="planetDetails">
+                    <div class="spinner invisible"></div>
+                </section>
+            </article>
         </main>
     </div>
     <script src="scripts.js"></script>
